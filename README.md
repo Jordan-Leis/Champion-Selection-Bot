@@ -23,19 +23,19 @@ This bot suggests a champion for your League of Legends team based on the champi
 
 1. Clone the repository and navigate to the project directory:
 
-   ```bash
+   bash
    git clone https://github.com/your-repo-url.git
-   cd your-repo-directory```
+   cd your-repo-directory
 
 2. Install the required dependencies:
 
-  ```bash
+     bash
      Copy code
-     pip install pandas openai langchain streamlit python-dotenv```
+     pip install pandas openai langchain streamlit python-dotenv
 
 3. Set up your environment variables:
-
- ```Create a .env file in the project directory, add your OpenAI API key to the .env file
+  bash
+  Create a .env file in the project directory, add your OpenAI API key to the .env file
 
 
 4. Ensure the League_of_legend_Champions_2024.xlsx file is available in the project directory, or update the file_path in the script accordingly.
