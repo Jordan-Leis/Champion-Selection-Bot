@@ -25,13 +25,13 @@ This bot suggests a champion for your League of Legends team based on the champi
 
    ```bash
    git clone https://github.com/your-repo-url.git
-   cd your-repo-directory
+   cd your-repo-directory```
 
 2. Install the required dependencies:
 
   ```bash
      Copy code
-     pip install pandas openai langchain streamlit python-dotenv
+     pip install pandas openai langchain streamlit python-dotenv```
 
 3. Set up your environment variables:
 
