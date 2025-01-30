@@ -17,6 +17,7 @@ st.markdown(
         body {
             background-color: #0A74DA;
             color: white;
+            font-family: 'Arial Black', sans-serif;
         }
         .stApp {
             text-align: center;
@@ -24,13 +25,36 @@ st.markdown(
         h1 {
             text-align: center;
         }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .splash-art {
+            width: 20%;
+            height: auto;
+        }
+        .center-content {
+            flex-grow: 1;
+            text-align: center;
+        }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# display league of legends logo
-st.image("https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png", width=800)
+# display splash art images and centered logo
+st.markdown("""
+    <div class='container'>
+        <img src='https://static.displate.com/857x1200/displate/2023-06-07/a115f7e71d34c2f3c77682fdb0f8c2df_bbd97dfc579578c076bec5bc72b1ee95.jpg' class='splash-art'>
+        <div class='center-content'>
+            <img src='https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png' width=600>
+        </div>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKXyh8VZBX-cQ8ksJ36xTWxGUmVkGBjGkLNw&s' class='splash-art'>
+    </div>
+""", unsafe_allow_html=True)
 
 # load excel data
 file_path = "League_of_legend_Champions_2024.xlsx"  # ensure this path is correct
